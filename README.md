@@ -29,7 +29,7 @@ Pre-compiling binaries
     wget http://us2.php.net/get/php-5.3.6.tar.gz/from/us.php.net/mirror 
     mv mirror php.tar.gz
     tar xzvf php.tar.gz
-    cd php-5.3.6/
+    cd php-5.4.10/
     ./configure --prefix=/app/php --with-apxs2=/app/apache/bin/apxs --with-mysql --with-pdo-mysql --with-pgsql --with-pdo-pgsql --with-iconv --with-gd --with-curl=/usr/lib --with-config-file-path=/app/php --enable-soap=shared --with-openssl
     make
     make install
@@ -52,7 +52,7 @@ Pre-compiling binaries
     cd /app
     echo '2.2.19' > apache/VERSION
     tar -zcvf apache.tar.gz apache
-    echo '5.3.6' > php/VERSION
+    echo '5.4.10' > php/VERSION
     tar -zcvf php.tar.gz php
 
 
